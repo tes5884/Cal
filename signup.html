@@ -12,7 +12,7 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a>
+				<li><a href="main.html">Home</a>
 				</li>
 				<li><a href="halacha.html">Halacha</a>
 				</li>
@@ -30,34 +30,34 @@
 		<div class="panel panel-default form-signup">
 			<div class="panel-heading">Signup Form</div>
 			<div class="panel-body">
-				<form role="form">
+				<form role="form" action="php/signup.php" method="post">
 					<div class="form-inline form-signup">
 						<div class="row">
 							<div class="col-md-4 form-group">
 								<label for="fNameInput">First Name</label>
-								<input type="text" class="form-control" id="fNameInput" placeholder="John">
+								<input type="text" class="form-control" name="fNameInput" id="fNameInput" placeholder="John">
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="iNameInput">Middle Initial</label>
-								<input type="text" class="form-control" id="iNameInput" placeholder="T">
+								<input type="text" class="form-control" name="iNameInput" id="iNameInput" placeholder="T">
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="lNameInput">Last Name</label>
-								<input type="text" class="form-control" id="lNameInput" placeholder="Smith">
+								<input type="text" class="form-control" name="lNameInput" id="lNameInput" placeholder="Smith">
 							</div>
 						</div>
 						<div class="row top-margin">
 							<div class="col-md-4 form-group">
 								<label for="emailInput">Email Address</label>
-								<input type="text" class="form-control" id="emailInput" placeholder="example@example.com">
+								<input type="text" class="form-control" name="emailInput" id="emailInput" placeholder="example@example.com">
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="passwordInput">Password</label>
-								<input type="password" class="form-control" id="passwordInput">
+								<input type="password" class="form-control" name="passwordInput" id="passwordInput">
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="confirmPasswordInput">Confirm Password</label>
-								<input type="password" class="form-control" id="confirmPasswordInput">
+								<input type="password" class="form-control" name="confirmPasswordInput" id="confirmPasswordInput">
 							</div>
 						</div>
 						<div class="row">
