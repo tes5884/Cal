@@ -48,3 +48,12 @@
 	// All done!
 	$mailer->Send();
 ?>
+
+//check if active user
+<?php 
+	require_once 'init.php';
+	if(!$user->active){
+		Header('Location: index.php');
+		Exit();
+	}
+?>

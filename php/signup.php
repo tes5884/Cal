@@ -46,11 +46,11 @@
     		echo("Your email address is already registered. Either login using your email address, or signup using a different address.");
     		exit;
 		} else {
-		$sql = "INSERT INTO users_test (first_name, middle_name, last_name, email, password) VALUES ('$fName', '$iName', '$lName', '$email', '$passwordHash')";
+		$sql = "INSERT INTO users_test (first_name, middle_name, last_name, email, password, active) VALUES ('$fName', '$iName', '$lName', '$email', '$passwordHash', TRUE)";
     	// use exec() because no results are returned
     	$conn->exec($sql);
     	echo("Thank you for signing up! I will now redirect you to the login page.");
-    	sleep(5);
+    	//sleep(5);
     	header('Location: ../login.html');
 		}
 	}
