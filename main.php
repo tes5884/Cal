@@ -34,6 +34,7 @@
 		<div class="row">
 			<!-- -->
 			<div class="col-md-3">
+				
 				<p class="lead text-center">Track your mikvah and flow calculations online. </p>
 			</div>
 			<!-- -->
