@@ -10,27 +10,14 @@
 <body>
 	<div class="container">
 		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-			<ul class="nav navbar-nav">
-				<li><a href="main.html">Home</a>
-				</li>
-				<li><a href="halacha.html">Halacha</a>
-				</li>
-				<li><a href="contact.html">Contact</a>
-				</li>
-				<li><a href="login.html">Login</a>
-				</li>
-				<li class="active"><a href="signup.html">Signup</a>
-				</li>
-			</ul>
-		</nav>
+		<?php include('php/navbar.php');?>
 		<!-- end navbar -->
 
 		<!-- form start -->
 		<div class="panel panel-default form-signup">
 			<div class="panel-heading">Signup Form</div>
 			<div class="panel-body">
-				<form role="form" action="php/signup.php" method="post">
+				<form role="form" action="php/signupScript.php" method="post">
 					<div class="form-inline form-signup">
 						<div class="row">
 							<div class="col-md-4 form-group">

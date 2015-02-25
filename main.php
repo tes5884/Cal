@@ -1,3 +1,10 @@
+<?php
+  include_once ('php/init.php');
+	if ($_SESSION['loggedin'] == 0) {
+		Header('Location: index.php');
+		Exit();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <title>Calendar</title>
@@ -13,28 +20,14 @@
 <body>
 	<div class="container">
 		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="main.html">Home</a>
-				</li>
-				<li><a href="halacha.html">Halacha</a>
-				</li>
-				<li><a href="contact.html">Contact</a>
-				</li>
-				<li><a href="login.html">Login</a>
-				</li>
-				<li><a href="signup.html">Signup</a>
-				</li>
-			</ul>
-		</nav>
+		<?php include('php/navbar.php');?>
 		<!-- end navbar -->
 
 		<!-- start grid -->
 		<div class="row">
 			<!-- -->
 			<div class="col-md-3">
-				
+				<p class="lead text-center">Hello <?php echo($_SESSION['fName']) ?>!</p>
 				<p class="lead text-center">Track your mikvah and flow calculations online. </p>
 			</div>
 			<!-- -->
@@ -78,7 +71,7 @@
 			</div>
 			<!-- -->
 			<div class="col-md-3">
-				<form action="test.php" method="post">
+				<form action="" method="post">
 					<div class="form-group">
 						<label>Day of arrival:</label>
 						<input type="date" class="form-control" name="datePicker" id="datePicker" placeholder="date">

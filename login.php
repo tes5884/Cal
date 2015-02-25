@@ -10,20 +10,7 @@
 <body>
 	<div class="container">
 		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a>
-				</li>
-				<li><a href="halacha.html">Halacha</a>
-				</li>
-				<li><a href="contact.html">Contact</a>
-				</li>
-				<li class="active"><a href="login.html">Login</a>
-				</li>
-				<li><a href="signup.html">Signup</a>
-				</li>
-			</ul>
-		</nav>
+		<?php include('php/navbar.php');?>
 		<!-- end navbar -->
 
 		<!-- form start -->
@@ -32,15 +19,15 @@
 			<div class="panel-body">
 				<form class="form-horizontal" action="php/loginScript.php" method="post">
 					<div class="form-group">
-						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<input type="email" class="form-control" name="emailInput" id="inputEmail" placeholder="Email">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+						<label for="inputPassword" class="col-sm-2 control-label">Password</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+							<input type="password" class="form-control" name="passwordInput" id="inputPassword" placeholder="Password">
 						</div>
 					</div>
 					<div class="form-group">

@@ -13,23 +13,8 @@
 <body>
 	<div class="container">
 		<!-- Navbar -->
-		<nav class="navbar navbar-default">
-
-			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a>
-				</li>
-				<li class="active"><a href="halacha.html">Halacha</a>
-				</li>
-				<li><a href="contact.html">Contact</a>
-				</li>
-				<li><a href="login.html">Login</a>
-				</li>
-				<li><a href="signup.html">Signup</a>
-				</li>
-			</ul>
-		</nav>
+		<?php include('php/navbar.php');?>
 		<!-- end navbar -->
-
 	</div>
 	<!-- js files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
