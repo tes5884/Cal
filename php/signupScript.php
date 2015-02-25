@@ -1,5 +1,5 @@
 <?php
-	include ('database_connect.php');
+	include ('init.php');
 	
 	//confirm names arent null
 	if ($_POST['fNameInput'] == NULL || $_POST['lNameInput'] == NULL)
@@ -37,30 +37,21 @@
 	$email = $_POST['emailInput'];
 	$passwordHash = password_hash($_POST['passwordInput'], PASSWORD_DEFAULT);
 	
-	try {
-		//check if email already in db
-		$stmt = $conn->prepare("SELECT email FROM users_test WHERE email='$email'"); 
-    	$stmt->execute();
-    	$row =$stmt->fetchObject();
-    	if (isset($row->email)) {
-    		echo("Your email address is already registered. Either login using your email address, or signup using a different address.");
-    		exit;
-		} else {
-		$sql = "INSERT INTO users_test (first_name, middle_name, last_name, email, password, active) VALUES ('$fName', '$iName', '$lName', '$email', '$passwordHash', TRUE)";
-    	// use exec() because no results are returned
-    	$conn->exec($sql);
-    	echo("Thank you for signing up! I will now redirect you to the login page.");
-    	//sleep(5);
-    	header('Location: ../login.html');
-		}
+	$checkUser -> bindParam(':email', $email);
+	$checkUser -> execute();
+	$test = $checkUser->fetchObject();
+	if ($test->email == $email) {
+	  echo("Your email address is already registered. Either login using your email address, or signup using a different address.");
+	  Exit();
+	} else {
+  	$newUser -> bindParam(':fName', $fName);
+    $newUser -> bindParam(':iName', $iName);
+    $newUser -> bindParam(':lName', $lName);
+    $newUser -> bindParam(':email', $email);
+    $newUser -> bindParam(':password', $passwordHash);
+    $newUser -> execute();
+    Header('Location: ../login.html');
 	}
-	catch(PDOException $e)
-    {
-    	echo $e->getMessage();
-    }
-
-	$conn = null;
-	
 
 //TO-DO
 //confirm signed up 
