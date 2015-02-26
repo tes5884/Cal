@@ -15,6 +15,9 @@
 		<!-- Navbar -->
 		<?php include('php/navbar.php');?>
 		<!-- end navbar -->
+		<div>
+		  <p class="lead">Halacha</p>
+		</div>
 	</div>
 	<!-- js files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
