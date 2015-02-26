@@ -21,6 +21,9 @@ function echoActiveClassIfRequestMatches($requestUri)
 			<li><a href="logout.php">Logout</a>
 			</li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right navbar-right-user">
+			<li><a href="#"><?php echo($_SESSION['fName'] . " " . $_SESSION['lName']); ?></a></li>
+		</ul>
 	</nav>
 <?php else: ?>
 	<nav class="navbar navbar-default">
