@@ -18,4 +18,9 @@ $checkUser = $db->prepare("
 	FROM users_test
 	WHERE email=:email
 ");
+
+$flowUpdate = $db->prepare("
+  INSERT INTO user_flows (flow_date, day_night, fk_user_id)
+  VALUES (:flowDate, :dayOrNight, :userId)
+")
 ?>
