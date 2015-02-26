@@ -71,16 +71,16 @@
 			</div>
 			<!-- -->
 			<div class="col-md-3">
-				<form action="" method="post">
+				<form action="php/flowUpdate.php" method="post">
 					<div class="form-group">
 						<label>Day of arrival:</label>
 						<input type="date" class="form-control" name="datePicker" id="datePicker" placeholder="date">
 
 						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>Night
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="night" checked>Night
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Day
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="day">Day
 						</label>
 
 						<button type="submit" class="btn btn-block btn-default">Submit</button>
