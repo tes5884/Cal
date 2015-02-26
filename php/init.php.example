@@ -14,7 +14,7 @@ $newUser = $db->prepare("
 ");
 
 $checkUser = $db->prepare("
-	SELECT id, first_name, middle_name, last_name, email, password, active
+	SELECT user_id, first_name, middle_name, last_name, email, password, active
 	FROM users_test
 	WHERE email=:email
 ");
