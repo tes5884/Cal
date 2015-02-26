@@ -21,19 +21,20 @@
 	</div>
 	<div class="row">
 	  <div class="col-md-4">
-	    <p class="lead">Alpha</p>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi mauris, condimentum quis mollis ornare, lacinia quis ligula. Proin eu nulla sapien. Morbi maximus nisi et nunc dictum, eu fermentum ligula euismod. Phasellus iaculis risus et commodo aliquam. Nunc facilisis tincidunt fringilla. Aliquam ullamcorper laoreet arcu ac laoreet. Donec malesuada, nibh a tincidunt condimentum, metus lacus imperdiet magna, ac eleifend velit urna eu elit. In cursus felis eget ante accumsan pharetra. Suspendisse vitae mattis leo, at bibendum turpis. Cras finibus cursus metus varius luctus. Sed risus eros, cursus in mi in, aliquet tempor nisi. Nunc rutrum lacus nec elit dictum, at vulputate mi finibus.</p>
-	    <a href="#" class="btn btn-default">Read more</a>
+	    <p class="lead">The Beauty of Mikvah</p>
+	    <p>Somehow, I managed to make it through 22 years of marriage before the notion of mikvah (ritual bath), was raised for me. Sure, I knew that married Jewish women went to the mikvah and observed the laws of Taharat Hamishpacha (Family Purity), but I really did not know when, why or how. I did not have any idea of the commitment involved and the blessings to be reaped by observance.	<em>(source: mikvah.org)</em></p>
+	    <a href="http://mikvah.org/article/the_beauty_of_mikvah_" class="btn btn-default">Read more</a>
 	  </div>
 	  <div class="col-md-4">
-	    <p class="lead">Beta</p>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi mauris, condimentum quis mollis ornare, lacinia quis ligula. Proin eu nulla sapien. Morbi maximus nisi et nunc dictum, eu fermentum ligula euismod. Phasellus iaculis risus et commodo aliquam. Nunc facilisis tincidunt fringilla. Aliquam ullamcorper laoreet arcu ac laoreet. Donec malesuada, nibh a tincidunt condimentum, metus lacus imperdiet magna, ac eleifend velit urna eu elit. In cursus felis eget ante accumsan pharetra. Suspendisse vitae mattis leo, at bibendum turpis. Cras finibus cursus metus varius luctus. Sed risus eros, cursus in mi in, aliquet tempor nisi. Nunc rutrum lacus nec elit dictum, at vulputate mi finibus.</p>
-      <a href="#" class="btn btn-default">Read more</a>	  
+	    <p class="lead">A Fresh Look At The Mikvah</p>
+	    <p>Once a month, after nightfall, my wife keeps a secret appointment. Neither our neighbors, our friends, nor our children know where she goes, although our children sometimes wonder why she returns an hour or so later with her hair wet. Usually, my wife drives herself, but sometimes I drive her there. When I do, I never park and wait for her, it would be improper for a man to sit in the car outside. I leave and return a half-hour later to pick her up. <em>(source: mikvah.org)</em></p>
+      <a href="http://mikvah.org/article/a_fresh_look_at_the_mikvah" class="btn btn-default">Read more</a>	  
 	  </div>
 	  <div class="col-md-4">
 	    <p class="lead">Gama</p>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi mauris, condimentum quis mollis ornare, lacinia quis ligula. Proin eu nulla sapien. Morbi maximus nisi et nunc dictum, eu fermentum ligula euismod. Phasellus iaculis risus et commodo aliquam. Nunc facilisis tincidunt fringilla. Aliquam ullamcorper laoreet arcu ac laoreet. Donec malesuada, nibh a tincidunt condimentum, metus lacus imperdiet magna, ac eleifend velit urna eu elit. In cursus felis eget ante accumsan pharetra. Suspendisse vitae mattis leo, at bibendum turpis. Cras finibus cursus metus varius luctus. Sed risus eros, cursus in mi in, aliquet tempor nisi. Nunc rutrum lacus nec elit dictum, at vulputate mi finibus.</p>
-      <a href="#" class="btn btn-default">Read more</a>
+	    <p>“So” – my beautiful Rebbetzin Channie said to me one day – “Rose, what are we doing special for your 70th birthday – a mitzvah, something special?”</p>
+			<p>“Well, Channie,” I replied, “I’ve never experienced mikvah and I’d like to!’  Even though at my age it is not required.  How does that sound?” <em>(source: mikvah.org)</em></p>
+	    <a href="http://mikvah.org/article/experiencing_mikvah" class="btn btn-default">Read more</a>
 	  </div>
 	</div>
 	<div class="row">
