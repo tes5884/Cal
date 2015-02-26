@@ -50,7 +50,7 @@
     $newUser -> bindParam(':email', $email);
     $newUser -> bindParam(':password', $passwordHash);
     $newUser -> execute();
-    Header('Location: ../login.html');
+    Header('Location: ../login.php');
 	}
 
 //TO-DO

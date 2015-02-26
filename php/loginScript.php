@@ -22,7 +22,7 @@
 	$user = $checkUser->fetchObject();
 	if (password_verify($_POST['passwordInput'], $user->password)) {
 	  $_SESSION['loggedin'] = 1;
-	  $_SESSION['userId'] = $user->id;
+	  $_SESSION['userId'] = $user->user_id;
 	  $_SESSION['fName'] = $user->first_name;
 	  $_SESSION['lName'] = $user->last_name;
 	  $_SESSION['email'] = $user->email;
