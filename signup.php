@@ -15,7 +15,7 @@
 
 		<!-- form start -->
 		<div class="panel panel-default form-signup">
-			<div class="panel-heading">Signup Form</div>
+			<div class="panel-heading"><h3 class="panel-title">Signup</h3></div>
 			<div class="panel-body">
 				<form role="form" action="php/signupScript.php" method="post">
 					<div class="form-inline form-signup">

@@ -15,7 +15,7 @@
 
 		<!-- form start -->
 		<div class="panel panel-default form-signup">
-			<div class="panel-heading">Login</div>
+			<div class="panel-heading"><h3 class="panel-title">Login</h3></div>
 			<div class="panel-body">
 				<form class="form-horizontal" action="php/loginScript.php" method="post">
 					<div class="form-group">
