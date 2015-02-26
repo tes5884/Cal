@@ -2,15 +2,13 @@ signup page
 	- add bot check
 	
 Halacha page
+  - add content
 
 Contact page
-	- add 
+	- add form
 
 Front page
 	- needs to be created
-	- 
 
 PHP
-	- Signup Page
-	- Login Page
-	- Prepared statements
+  - Flow calcs
