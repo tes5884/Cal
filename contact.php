@@ -17,12 +17,35 @@
 		<!-- end navbar -->
 		
 		<!-- form start -->
-    <div class="panel panel-default form-signup">
+    <div class="panel panel-default contact-form">
       <div class="panel-heading">
-        <h3 class="panel-title">Panel title</h3>
+        <h3 class="panel-title">Contact Us</h3>
       </div>
       <div class="panel-body">
-        Panel content
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+        <form class="form-horizontal" action="" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="John Smith">
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="example@example.org">
+          </div>
+          <div class="form-group">
+						<label for="subject">Subject</label>
+						<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" rows="8"></textarea>
+          </div>
+          <button class="btn btn-default btn-block" type="submit">Send</button>
+        </form>
+        </div>
+        </div>
       </div>
     </div>
 		<!-- end form -->
