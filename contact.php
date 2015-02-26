@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Calendar</title>
+	<title>Contact</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
