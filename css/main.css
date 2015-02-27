@@ -4,7 +4,7 @@ body {
   background-color: #eee;
 }
 .full {
-    background: url('../img/DSC_0885.jpg') center -120px no-repeat;
+    /*background: url('../img/DSC_0885.jpg') center -120px no-repeat;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

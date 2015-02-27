@@ -15,7 +15,9 @@
 	<!-- start grid -->
 	<div class="row">
 	  <div class="col-md-12">
+	  <img class="img-responsive" src="img/DSC_0885.jpg">
       <div class="jumbotron">
+      
       </div>
 	  </div>
 	</div>
@@ -31,7 +33,7 @@
       <a href="http://mikvah.org/article/a_fresh_look_at_the_mikvah" class="btn btn-default">Read more</a>	  
 	  </div>
 	  <div class="col-md-4">
-	    <p class="lead">Gama</p>
+	    <p class="lead">Experiencing Mikvah</p>
 	    <p>“So” – my beautiful Rebbetzin Channie said to me one day – “Rose, what are we doing special for your 70th birthday – a mitzvah, something special?”</p>
 			<p>“Well, Channie,” I replied, “I’ve never experienced mikvah and I’d like to!’  Even though at my age it is not required.  How does that sound?” <em>(source: mikvah.org)</em></p>
 	    <a href="http://mikvah.org/article/experiencing_mikvah" class="btn btn-default">Read more</a>
