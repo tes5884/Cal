@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Calendar</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
+<head>
+	<title>Calendar</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+ 
 </head>
 <body class="full">
 	<div class="container">
+	
   	<!-- Navbar -->
 		<?php include('php/navbar.php');?>
 	<!-- end navbar -->
+	
 	<!-- start grid -->
 	<div class="row">
 	  <div class="col-md-12">
-	  <img class="img-responsive img-rounded" src="img/test_1.jpg">
-      <div class="jumbotron">
-      
-      </div>
+	  
+	  <img class="img-responsive img-rounded" src="img/test_1.jpg" usemap="#map">
+	  <map name="map">
+			<area shape="rect" coords="775,426,1134,451" href="signup.php" />
+		</map>
+
 	  </div>
 	</div>
+	<br></br>
 	<div class="row">
 	  <div class="col-md-4">
 	    <p class="lead">The Beauty of Mikvah</p>
