@@ -9,7 +9,7 @@ function echoActiveClassIfRequestMatches($requestUri)
 }
 ?>
 
-<?php if($_SESSION['loggedin'] ==1 ): ?>
+<?php if(isset($_SESSION['loggedin'])): ?>
 	<nav class="navbar navbar-default">
 		<ul class="nav navbar-nav">
 			<li <?=echoActiveClassIfRequestMatches("main")?>><a href="main.php">Main</a>
