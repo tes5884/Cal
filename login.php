@@ -23,22 +23,13 @@
 					<div class="form-group">
 						<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" name="emailInput" id="inputEmail" placeholder="Email">
+							<input type="email" class="form-control" name="emailInput" id="inputEmail" placeholder="Email" autofocus="">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="inputPassword" class="col-sm-2 control-label">Password</label>
 						<div class="col-sm-10">
 							<input type="password" class="form-control" name="passwordInput" id="inputPassword" placeholder="Password">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox">Remember me
-								</label>
-							</div>
 						</div>
 					</div>
 					<div class="form-group">

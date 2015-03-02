@@ -24,7 +24,7 @@
 						<div class="row">
 							<div class="col-md-4 form-group">
 								<label for="fNameInput">First Name</label>
-								<input type="text" class="form-control" name="fNameInput" id="fNameInput" placeholder="John">
+								<input type="text" class="form-control" name="fNameInput" id="fNameInput" placeholder="John" autofocus="">
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="iNameInput">Middle Initial</label>
