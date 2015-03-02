@@ -1,3 +1,4 @@
+<?php include ('php/init.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,16 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<?php
+	  if (isset($_SESSION['loggedin'])) {
+	    $name=$_SESSION['fName'] . " " . $_SESSION['lName'];
+	    $email=$_SESSION['email'];
+	    
+	  } else {
+	    $name = "";
+	    $email = "";
+	  }
+	?>
 </head>
 
 <body>
@@ -25,14 +36,14 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8">
-        <form class="form-horizontal" action="" method="post">
+        <form class="form-horizontal" action="php/sendEmail.php" method="post">
           <div class="form-group">
             <label for="name">Name</label>
-						<input type="text" class="form-control" name="name" id="name" placeholder="John Smith">
+						<input type="text" class="form-control" name="name" id="name" placeholder="John Smith" value="<?php echo($name); ?>" autofocus="">
 					</div>
 					<div class="form-group">
 						<label for="email">Email Address</label>
-						<input type="email" class="form-control" name="email" id="email" placeholder="example@example.org">
+						<input type="email" class="form-control" name="email" id="email" placeholder="example@example.org" value="<?php echo($email); ?>">
           </div>
           <div class="form-group">
 						<label for="subject">Subject</label>
@@ -40,7 +51,7 @@
           </div>
           <div class="form-group">
 						<label for="message">Message</label>
-						<textarea class="form-control" rows="8"></textarea>
+						<textarea class="form-control" name="message" rows="8"></textarea>
           </div>
           <button class="btn btn-default btn-block" type="submit">Send</button>
         </form>
