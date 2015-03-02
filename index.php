@@ -14,7 +14,7 @@
 	
   	<!-- Navbar -->
 		<?php include('php/navbar.php');?>
-	<!-- end navbar -->
+		<!-- end navbar -->
 	
 	<!-- start grid -->
 	<div class="row">

@@ -1,6 +1,6 @@
 <?php
   include_once ('php/init.php');
-	if ($_SESSION['loggedin'] == 0) {
+	if (!isset($_SESSION['loggedin'])) {
 		Header('Location: index.php');
 		Exit();
 	}
