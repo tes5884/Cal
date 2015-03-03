@@ -1,19 +1,22 @@
-<?php
-	require_once 'init.php';
+<?php 
+  include_once ('../php/init.php');
+
+  $checkFlow-> bindParam(':userId', $_SESSION['userId']);
+	$checkFlow-> execute();
+	$data = $checkFlow->fetchAll();
+
+  foreach ($data as $row) {
+    echo('<li>');
+    echo($row['flow_date']);
+    echo('</li>');
+  }
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+<script src="../js/hebcal.noloc.min.js"></script>
+<script>
+		document.write(new Hebcal.HDate(new Date('2015-03-27 00:00:00')));
+</script>
 
-</head>
-
-<body>
-	<?php if($user->active): ?>
-		<p>you are active!</p>
-	<?php else: ?>
-		<p>you are not active</p>	
-	<?php endif; ?>
-</body>
-
-</html>
+<!--
+document.write(new Hebcal.HDate(<?php $row['flow_date'] ?>));
+-->

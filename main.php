@@ -49,8 +49,9 @@
 						<div class="col-md-4">March 21, 1989</div>
 						<div class="col-md-4">Day</div>
 					</div>
-
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Past Flow Dates</div>
 				<table class="table table-bordered table-hover">
 					<tr>
 						<th>Flow Date</th>
@@ -59,35 +60,52 @@
 						<th>Haflagah</th>
 						<th>Onah Beinoni</th>
 					</tr>
-					<tr>
-						<td>March 21, 1989</td>
-						<td>Day</td>
-						<td>March 21, 1989</td>
-						<td>March 21, 1989</td>
-						<td>March 21, 1989</td>
-					</tr>
-					<tr></tr>
+					<?php
+						$checkFlow-> bindParam(':userId', $_SESSION['userId']);
+						$checkFlow-> execute();
+						$data = $checkFlow->fetchAll();
+					?>	
+						<?php foreach ($data as $row): ?>
+						<tr>
+    					<td><script> document.write(Hebcal.HDate(<?php $row['flow_date'] ?>))</script></td>
+    					<td><?php echo($row['day_night']) ?></td>
+    					<td></td>
+    					<td></td>
+    					<td></td>
+    					<?php endforeach; ?>		
+						</tr>
 				</table>
+				</div>
 			</div>
 			<!-- -->
-			<div class="col-md-3">
-				<form action="php/flowUpdate.php" method="post">
-					<div class="form-group">
-						<label>Day of arrival:</label>
-						<input type="date" class="form-control" name="datePicker" id="datePicker" placeholder="date">
-
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="night" checked>Night
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="day">Day
-						</label>
-
-						<button type="submit" class="btn btn-block btn-default">Submit</button>
-					</div>
-				</form>
-			</div>
-			<!-- -->
+      <div class="col-md-3 text-center">
+        <div class="panel panel-default">
+          <div class="panel-heading">Update Flow Dates</div>
+          <form action="php/flowUpdate.php" method="post">
+            <br />  
+            <div class="form-group update-form">
+              <label>Date:</label>
+              <input type="date" class="form-control" name="datePicker" id="datePicker" placeholder="date">
+            </div>
+            <div class="form-group update-form"
+              <input type="time" class="form-control" name="datePicker" id="datePicker" placeholder="date">
+            </div>
+            <div class="form-group">
+              <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="night" checked>Night
+              </label>
+              <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="day">Day
+              </label>
+            </div>
+            <div class="update-form">
+              <button type="submit" class="btn btn-block btn-default">Submit</button>
+              <br />
+            </div>
+          </form>
+        </div>  
+      </div>
+      <!-- -->
 		</div>
 	</div>
 	<!-- end grid -->

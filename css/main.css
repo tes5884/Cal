@@ -3,6 +3,11 @@ body {
   padding-bottom: 40px;
   padding-top: 40px;
 }
+.update-form {
+  margin: 0 auto;
+  max-width: 225px;
+}
+
 .full {
     /*background: url('../img/DSC_0885.jpg') center -120px no-repeat;*/
     -webkit-background-size: cover;

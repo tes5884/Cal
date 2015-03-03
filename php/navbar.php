@@ -12,6 +12,7 @@ function echoActiveClassIfRequestMatches($requestUri)
 <?php if(isset($_SESSION['loggedin'])): ?>
 	<nav class="navbar navbar-default">
 		<ul class="nav navbar-nav">
+			<li><a class="navbar-brand" href="main.php"><img src="img/logo2.png" alt=""></a></li>
 			<li <?=echoActiveClassIfRequestMatches("main")?>><a href="main.php">Main</a>
 			</li>
 			<li <?=echoActiveClassIfRequestMatches("halacha")?>><a href="halacha.php">Halacha</a>
@@ -29,6 +30,7 @@ function echoActiveClassIfRequestMatches($requestUri)
 	<nav class="navbar navbar-default">
 
 		<ul class="nav navbar-nav">
+			<li><a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt=""></a></li>
 			<li <?=echoActiveClassIfRequestMatches("index")?>><a href="index.php">Welcome</a>
 			</li>
 			<li <?=echoActiveClassIfRequestMatches("halacha")?>><a href="halacha.php">Halacha</a>

@@ -1,14 +1,7 @@
-signup page
-	- add bot check
-	
-Halacha page
-  - add content
-
-Contact page
-	- add form
-
-Front page
-	- needs to be created
-
-PHP
-  - Flow calcs
+Main Page
+  -Flow Calcs
+  
+  get date/time
+  convert to hebrew
+  check night or date
+  return english date
