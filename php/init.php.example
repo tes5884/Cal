@@ -6,24 +6,40 @@ try {
   echo 'Connection failed: ' . $e->getMessage();
 }
 
-if (!isset($_SESSION))
-{
-session_start();
-}
+if(!isset($_SESSION)) 
+{ 
+  session_start(); 
+} 
 
 $newUser = $db->prepare("
-	INSERT INTO users_test (first_name, middle_name, last_name, email, password) 
-	VALUES (:fName, :iName, :lName, :email, :password)
+  INSERT INTO users_test (first_name, middle_name, last_name, email, password) 
+  VALUES (:fName, :iName, :lName, :email, :password)
 ");
 
 $checkUser = $db->prepare("
-	SELECT user_id, first_name, middle_name, last_name, email, password, active
-	FROM users_test
-	WHERE email=:email
+  SELECT user_id, first_name, middle_name, last_name, email, password, active
+  FROM users_test
+  WHERE email=:email
 ");
 
 $flowUpdate = $db->prepare("
   INSERT INTO user_flows (flow_date, day_night, fk_user_id)
   VALUES (:flowDate, :dayOrNight, :userId)
+");
+
+$checkFlow = $db->prepare("
+	SELECT id, flow_date, day_night
+	FROM user_flows
+	WHERE fk_user_id=:userId
+	ORDER BY flow_date DESC
+	LIMIT 12
+");
+
+$latestFlow = $db->prepare("
+	SELECT id, flow_date, day_night
+	FROM user_flows
+	WHERE fk_user_id=:userId
+	ORDER BY flow_date DESC
+	LIMIT 1
 ")
 ?>
