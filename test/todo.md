@@ -1,7 +1,8 @@
 Main Page
-  -Flow Calcs
+  - Flow Calcs
+    - Haflagah
   
-  get date/time
-  convert to hebrew
-  check night or date
-  return english date
+  - Upcoming days should be empty when there are no days yet  
+  - FAQ
+    - Privacy - no names option
+    - Rabbinical something or other
