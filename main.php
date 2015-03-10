@@ -7,7 +7,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<title>Calendar</title>
+  <link rel="icon" href="favicon.ico" />
+  <title>Calendar</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -100,9 +101,9 @@
 							<th>Onah Beinoni</th>
 						</tr>
 						<?php
-							$checkFlow-> bindParam(':userId', $_SESSION['userId']);
-							$checkFlow-> execute();
-							$data = $checkFlow->fetchAll();
+							$checkFlowDesc-> bindParam(':userId', $_SESSION['userId']);
+							$checkFlowDesc-> execute();
+							$data = $checkFlowDesc->fetchAll();
 						?>	
 							<?php foreach ($data as $row): ?>
 							<?php $date = json_encode($row['flow_date']); ?>

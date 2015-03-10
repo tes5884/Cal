@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="favicon.ico" />
 	<title>Contact</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
